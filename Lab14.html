@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p
+{
+color:black;
+<!--text-align:center;-->
+}
+body
+{
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+table, td, th
+{
+color:black;
+}
+h1
+{
+border:2px solid red;
+color:Purple;
+text-align:center;
+}
+h2
+{
+color:Black;
+}
+th
+{
+color:red;
+}
+#cast
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:85%;
+border-collapse:collapse;
+}
+
+#cast td, #cast th 
+{
+font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+
+#cast th 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#hide").click(function(){
+		$("p1").hide();
+	});
+	$("#show").click(function(){
+		$("p1").show();
+	});
+});
+</script>
+</head>
+<title>Reservoir Dogs</title>
+<body>
+
+<div id="header" style="background-color:#66FF33;">
+<!--table width="1000">
+<tr>
+<!--td colspan"2" style="background-color:#00CC66;text-align:center;"-->
+<h1>Every Dog Has His Day</h1>
+<!--/td>
+</tr-->
+</div>
+
+<div id="nav_bar" style="background-color:#FFD700;height:75px;width100px;float:left;">
+<!--tr>
+<td style="background-color:#FF6600;width:100px;height:200px;float:left;"-->
+<b><u>Navigation</u></b><br />
+<a href="http://www.imdb.com/title/tt0105236/">IMDB Page</a> <br />
+<a href="http://bloodygta.wikia.com/wiki/BloodyGTA_Wikia">Wiki</a>
+<!--/td>
+</tr-->
+</div>
+<br />
+<br />
+<br />
+
+<div id="description" style="background-color:#FF5C5C">
+<p>"Reservoir Dogs is a 1992 American crime film that depicts the events before and after a botched diamond heist, but not the heist itself. The film was the debut of director and writer Quentin Tarantino, and stars an ensemble cast - Harvey Keitel, Tim Roth, Chris Penn, Steve Buscemi, Lawrence Tierney, and Michael Madsen. Tarantino and criminal-turned-author Edward Bunker have minor roles. It incorporates many themes that have become Tarantino's hallmarks - violent crime, pop culture references, profuse profanity, and a nonlinear storyline. The film has become a classic of independent film and a cult hit. It was named "Greatest Independent Film of all Time" by Empire magazine. Reservoir Dogs was generally well received, and the cast was praised by many critics. Although it was not given much promotion upon release, the film became a modest success in the United States after grossing $2,832,029, making its $1.2 million budget back. The film was more successful in the United Kingdom, grossing nearly £6.5 million, and it achieved higher popularity after the success of Tarantino's next directorial effort, Pulp Fiction. A soundtrack titled Reservoir Dogs: The Original Motion Picture Soundtrack was released featuring songs used in the film, which are mostly from the 1970s. "(Wiki)
+</div>
+
+<div>
+<button type="button" onclick="toggleParagraph()">Click Here</button>
+<p id="hiddenparagraph">JavaScript</p>
+</div>
+
+<script>
+function toggleParagraph() {
+	var lPara = document.getElementById("hiddenparagraph");
+	lPara.style.display = (lPara.style.display == "table") ? "none" : "table";
+	}
+</script>
+
+<div>
+<p1 id="hiddenparagraph1">JQuery</p1>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</div>
+
+<div>
+<table id="cast">
+<tr>
+	<th>Picture (links to wiki)</th>
+	<th>Alter Ego</th>
+	<th>Real Name</th>
+	<th>Actor</th>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._White"><img src="http://quentin-tarantino.8m.com/mr-white.jpg" alt="Mr. White" width="300" height="300"></a></td>
+<td>Mr. White</td>
+<td>Lawrence "Larry" Dimmick</td>
+<td>Harvey Keitel</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._Blonde"><img src="http://quentin-tarantino.8m.com/mr-blonde.jpg" alt="Mr. Blonde" width="300" height="300"></a></td>
+<td>Mr. Blonde</td>
+<td>Vic Vega</td>
+<td>Michael Madsen</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._Orange"><img src="http://quentin-tarantino.8m.com/mr-orange.jpg" alt="Mr. Orange" width="300" height="300"></a></td>
+<td>Mr. Orange</td>
+<td>Freddy Newandyke</td>
+<td>Tim Roth</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._Blue"><img src="http://quentin-tarantino.8m.com/blue.jpg" alt="Mr. Blue" width="300" height="300"></a></td>
+<td>Mr. Blue</td>
+<td>Unknown</td>
+<td>Eddie Bunker</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._Brown"><img src="http://quentin-tarantino.8m.com/mr-brown.jpg" alt="Mr. Brown" width="300" height="300"></a></td>
+<td>Mr. Brown</td>
+<td>Unknown</td>
+<td>Quentin Tarantino</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Mr._Pink"><img src="http://quentin-tarantino.8m.com/mr-pink.jpg" alt="Mr. Pink" width="300" height="300"></a></td>
+<td>Mr. Pink</td>
+<td>Unknown</td>
+<td>Steve Buscemi</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Joe_Cabot"><img src="http://quentin-tarantino.8m.com/JOE.JPG" alt="Joe Cabot" width="300" height="300"></a></td>
+<td>Joe Cabot</td>
+<td>Joe</td>
+<td>Lawrence Tierney</td>
+</tr>
+<tr>
+<td><a href="http://bloodygta.wikia.com/wiki/Nice_Guy_Eddie"><img src="http://quentin-tarantino.8m.com/eddie.jpg" alt="Nice Guy Eddie" width="300" height="300"></a></td>
+<td>Eddie Cabot</td>
+<td>Nice Guy Eddie</td>
+<td>Chris Penn</td>
+</tr>
+</table>
+</div>
+<!--img border="0" src="http://www.svs.com/zim/sig4.jpg" alt="5.0 Litre Engine" width="304" height =" 228" style="float:center"-->
+
+<!--<div id="footer" style="Background-color:#EEEEEE;height:200px;width:100px;float:left;">
+Content</div>-->
+<tr>
+<td colspan="2" style="background-color:#af5b33;text-align:center;">
+Reservoir Dogs: A Film By Quentin Tarantino (1992)</td>
+</tr>
+
+</body>
+</html>
